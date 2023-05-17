@@ -5,16 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.dripWaterArun</groupId>
+        <groupId>org.example</groupId>
         <artifactId>platform-build</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
+    <groupId>io.github.dripWaterArun</groupId>
     <artifactId>platform-spring</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <spring-boot.version>3.0.6</spring-boot.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
+        <platform-core.version>1.0.0-SNAPSHOT</platform-core.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
     </properties>
 
@@ -52,7 +55,7 @@
             <dependency>
                 <groupId>io.github.dripWaterArun</groupId>
                 <artifactId>platform-core</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>${platform-core.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

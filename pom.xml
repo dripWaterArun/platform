@@ -2,18 +2,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <!-- 上传中央仓库父类 -->
     <parent>
         <groupId>io.github.dripWaterArun</groupId>
         <artifactId>sonatype-nexus-oss-parent</artifactId>
-        <version>1.2.2-RELEASE</version>
+        <version>1.2.3-SNAPSHOT</version>
     </parent>
 
+    <groupId>org.example</groupId>
     <artifactId>platform-build</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <!--项目地址-->
+    <url>https://github.com/dripWaterArun/platform</url>
+
+    <!-- 仓库信息，根据实际情况修改 -->
+    <scm>
+        <!--项目 git 仓库地址-->
+        <url>https://github.com/dripWaterArun/platform</url>
+        <!-- connection 与 developerConnection 写一个就可以-->
+        <!--项目 git 克隆地址(只读) RELEASE 版本-->
+        <connection>https://github.com/dripWaterArun/platform.git</connection>
+        <!--项目 git 克隆地址（读写）SNAPSHOT 版本-->
+        <developerConnection>https://github.com/dripWaterArun/platform.git</developerConnection>
+    </scm>
 
     <modules>
         <module>platform-core</module>
