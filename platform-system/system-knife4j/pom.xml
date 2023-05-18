@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>io.github.dripWaterArun</groupId>
-    <artifactId>system-knife4j</artifactId>
+    <artifactId>platform-system-knife4j</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 
     <properties>

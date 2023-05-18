@@ -14,6 +14,7 @@
     <groupId>io.github.dripWaterArun</groupId>
     <artifactId>platform-core</artifactId>
     <version>1.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <!--依赖的顺序，越靠前面优先级越高-->
     <dependencyManagement>
@@ -22,7 +23,7 @@
             <!-- 基础 -->
             <dependency>
                 <groupId>io.github.dripWaterArun</groupId>
-                <artifactId>system-base</artifactId>
+                <artifactId>platform-system-base</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -31,7 +32,7 @@
             <!-- 数据库连接 -->
             <dependency>
                 <groupId>io.github.dripWaterArun</groupId>
-                <artifactId>system-database</artifactId>
+                <artifactId>platform-system-database</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -40,7 +41,7 @@
             <!-- 接口文档 -->
             <dependency>
                 <groupId>io.github.dripWaterArun</groupId>
-                <artifactId>system-knife4j</artifactId>
+                <artifactId>platform-system-knife4j</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -49,7 +50,7 @@
             <!-- mybatis -->
             <dependency>
                 <groupId>io.github.dripWaterArun</groupId>
-                <artifactId>system-mybatis</artifactId>
+                <artifactId>platform-system-mybatis</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -58,7 +59,25 @@
             <!-- 工具 -->
             <dependency>
                 <groupId>io.github.dripWaterArun</groupId>
-                <artifactId>system-util</artifactId>
+                <artifactId>platform-system-util</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- 插件 -->
+            <dependency>
+                <groupId>io.github.dripWaterArun</groupId>
+                <artifactId>platform-system-plugin</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--小众工具-->
+            <dependency>
+                <groupId>io.github.dripWaterArun</groupId>
+                <artifactId>platform-system-minor</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>

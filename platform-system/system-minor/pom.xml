@@ -11,31 +11,22 @@
     </parent>
 
     <groupId>io.github.dripWaterArun</groupId>
-    <artifactId>platform-system-util</artifactId>
+    <artifactId>platform-system-minor</artifactId>
     <version>1.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
-        <commons-lang3.version>3.12.0</commons-lang3.version>
-        <httpcomponents.version>4.5.2</httpcomponents.version>
+        <diff-match-patch.version>0.0.2</diff-match-patch.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+            <!--测试文本差异-->
             <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${httpcomponents.version}</version>
+                <groupId>fun.mike</groupId>
+                <artifactId>diff-match-patch</artifactId>
+                <version>${diff-match-patch.version}</version>
             </dependency>
-
-            <!--常用工具-->
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang3.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 

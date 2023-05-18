@@ -15,11 +15,12 @@
 
     <modules>
         <module>system-base</module>
-        <module>system-database</module>
-        <module>system-mybatis</module>
         <module>system-util</module>
-        <module>system-knife4j</module>
+        <module>system-minor</module>
         <module>system-plugin</module>
+        <module>system-knife4j</module>
+        <module>system-mybatis</module>
+        <module>system-database</module>
     </modules>
 
 </project>

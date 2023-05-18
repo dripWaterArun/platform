@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>io.github.dripWaterArun</groupId>
-    <artifactId>system-mybatis</artifactId>
+    <artifactId>platform-system-mybatis</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 
     <properties>
