@@ -15,8 +15,12 @@
     <version>1.0.1-SNAPSHOT</version>
 
     <properties>
+        <victor.version>1.0.0-SNAPSHOT</victor.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <httpcomponents.version>4.5.2</httpcomponents.version>
+        <victor-system-copy.version>1.0.0-SNAPSHOT</victor-system-copy.version>
+        <victor-system-string.version>1.0.0-SNAPSHOT</victor-system-string.version>
+
     </properties>
 
     <dependencyManagement>
@@ -34,6 +38,27 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!-- 完整工具类 victor-->
+            <dependency>
+                <groupId>io.github.dripWaterArun</groupId>
+                <artifactId>victor</artifactId>
+                <version>${victor.version}</version>
+            </dependency>
+
+            <!-- 对象拷贝工具 -->
+            <dependency>
+                <groupId>io.github.dripWaterArun</groupId>
+                <artifactId>victor-system-copy</artifactId>
+                <version>${victor-system-copy.version}</version>
+            </dependency>
+
+            <!--字符串工具-->
+            <dependency>
+                <groupId>io.github.dripWaterArun</groupId>
+                <artifactId>victor-system-string</artifactId>
+                <version>${victor-system-string.version}</version>
             </dependency>
 
         </dependencies>
