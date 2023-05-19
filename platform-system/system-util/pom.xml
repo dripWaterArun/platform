@@ -20,7 +20,6 @@
         <httpcomponents.version>4.5.2</httpcomponents.version>
         <victor-system-copy.version>1.0.0-SNAPSHOT</victor-system-copy.version>
         <victor-system-string.version>1.0.0-SNAPSHOT</victor-system-string.version>
-
     </properties>
 
     <dependencyManagement>
