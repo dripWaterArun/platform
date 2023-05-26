@@ -7,18 +7,19 @@
     <parent>
         <groupId>org.example</groupId>
         <artifactId>platform-system</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
 
     <groupId>io.github.dripWaterArun</groupId>
     <artifactId>platform-system-base</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <name>platform-system-base</name>
+    <packaging>pom</packaging>
 
     <properties>
         <!-- 项目所用插件依赖版本 -->
         <lombok.version>1.18.26</lombok.version>
         <fastjson.version>1.2.47</fastjson.version>
-        <springboot-validation.version>2.6.7</springboot-validation.version>
+        <spring-boot-validation.version>2.6.7</spring-boot-validation.version>
     </properties>
 
     <dependencyManagement>
@@ -42,10 +43,11 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-validation</artifactId>
-                <version>${springboot-validation.version}</version>
+                <version>${spring-boot-validation.version}</version>
             </dependency>
 
         </dependencies>
     </dependencyManagement>
+
 
 </project>

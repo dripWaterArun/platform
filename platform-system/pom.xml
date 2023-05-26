@@ -6,8 +6,9 @@
 
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>platform-build</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <artifactId>platform-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath/>
     </parent>
 
     <artifactId>platform-system</artifactId>
@@ -17,7 +18,6 @@
         <module>system-base</module>
         <module>system-util</module>
         <module>system-minor</module>
-        <module>system-plugin</module>
         <module>system-knife4j</module>
         <module>system-mybatis</module>
         <module>system-database</module>

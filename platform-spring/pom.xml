@@ -5,21 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.example</groupId>
-        <artifactId>platform-build</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>io.github.dripWaterArun</groupId>
+        <artifactId>sonatype-oss-spring-boot-starter-parent</artifactId>
+        <version>3.0.6-SNAPSHOT</version>
     </parent>
 
     <groupId>io.github.dripWaterArun</groupId>
-    <artifactId>platform-spring</artifactId>
+    <artifactId>platform-build-spring-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <spring-boot.version>3.0.6</spring-boot.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
-        <platform-core.version>1.0.0-SNAPSHOT</platform-core.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
+        <platform-core-dependencies.version>1.0.0-SNAPSHOT</platform-core-dependencies.version>
     </properties>
 
     <dependencyManagement>
@@ -54,9 +54,9 @@
 
             <!--版本管理-->
             <dependency>
-                <groupId>io.github.dripWaterArun</groupId>
-                <artifactId>platform-core</artifactId>
-                <version>${platform-core.version}</version>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>platform-core-dependencies</artifactId>
+                <version>${platform-core-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
